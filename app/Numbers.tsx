@@ -7,22 +7,21 @@ export default function Numbers(props:any) {
         for (var i = 0; i < props.grid.length; i ++) {
           var tracker = {};
           for (var j = 0; j < props.grid[i].length; j ++) {
-            var num = props.grid[i][j]
             if (!tracker[props.grid[i][j]] && nums.indexOf(props.grid[i][j]) !== -1 && props.grid[i][j] !== "") {
-              tracker[props.grid[i][j]] = 1
-              vertical[i] = [j, props.grid[i][j]]
+              tracker[props.grid[i][j]] = 1;
+              vertical[i] = [j, props.grid[i][j]];
             } else if (tracker[props.grid[i][j]]) {
-              alert('not valid1')
-              delete tracker[props.grid[i][j]]
+              alert('not valid');
+              delete tracker[props.grid[i][j]];
             }
           }
         }
         var dup = [];
         vertical.forEach(function(item) {
           if (dup[item]) {
-            console.log('vertical fail')
+            alert('not valid');
           } else {
-            dup[item] = true
+            dup[item] = true;
           }
         }) 
       }
