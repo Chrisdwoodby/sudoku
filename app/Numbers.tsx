@@ -38,6 +38,6 @@ export default function Numbers(props:any) {
   }
 
   return (
-    <td id="input"><input type="text" placeholder={props.num} onChange={event => placement(event.target.value, props.i, props.j)}/></td>
+    <td id="input"><input id="box" type="text" placeholder={props.num} onChange={event => placement(event.target.value, props.i, props.j)}/></td>
   )
 }

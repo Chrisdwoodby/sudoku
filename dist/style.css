@@ -1,9 +1,11 @@
-table {
+#table {
     margin:1em auto;
+    width: 500px;
+    height: 100%;
   }
-  td {
-    height:30px;
-    width:30px;
+  td #box {
+    height:50px;
+    width:50px;
     border:1px solid;
     text-align:center;
   }
