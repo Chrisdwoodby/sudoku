@@ -83,9 +83,6 @@ export default function Numbers(props:any) {
 
 
   const placement = function(num, i:number, j:number) {
-    if (!Number(num)) {
-    //   alert('only numbers are allowed')
-    }
     var board = props.grid
     board[i][j] = num;
     props.setGrid(board); 
